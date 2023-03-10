@@ -1,0 +1,8 @@
+server:
+  port: 8283
+spring:
+  application:
+    name: clean-archi-business-service-employee
+  datasource:
+#    url: jdbc:mysql://localhost:3306/employees-db?createDatabaseIfNotExist=true
+    url: jdbc:mysql://microservices-db:3306/employees-db?createDatabaseIfNotExist=true

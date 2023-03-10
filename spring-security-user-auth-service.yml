@@ -1,0 +1,8 @@
+server:
+  port: 8286
+spring:
+  application:
+    name: spring-security-user-auth-service
+  datasource:
+#    url: jdbc:mysql://localhost:3306/users-authentication-db?createDatabaseIfNotExist=true
+    url: jdbc:mysql://microservices-db:3306/users-authentication-db?createDatabaseIfNotExist=true

@@ -1,0 +1,23 @@
+server:
+  port: 8281
+spring:
+  application:
+    name: backend-frontend-gateway-service
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOriginPatterns: "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - PUT
+              - POST
+              - DELETE
+            allowedHeaders: 
+              - Accept
+              - Content-Type
+              - Origin
+              - X-Tenant
